@@ -1,0 +1,6 @@
+# 1 to open gripper and 0 to close gripper
+int32 position 
+int32 speed
+int32 force
+---
+string response
