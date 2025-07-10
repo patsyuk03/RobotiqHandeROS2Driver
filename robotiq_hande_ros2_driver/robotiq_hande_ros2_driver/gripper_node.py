@@ -10,7 +10,7 @@ class HandEGripper(Node):
     def __init__(self):
         super().__init__('hand_e_gripper_node')
         # get the IP
-        self.declare_parameter('robot_ip')
+        self.declare_parameter('robot_ip', "192.168.0.120")
         ip = self.get_parameter('robot_ip')
         # initialize the gripper
         self.gripper = RobotiqGripper()
